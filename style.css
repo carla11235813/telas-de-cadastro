@@ -146,7 +146,7 @@ body {
 }
 
 form, .opc-container {
-    width: 70%; /**/
+    width: 50%; /**/
 }
 
 @media screen and (max-width: 870px) {
@@ -171,4 +171,16 @@ form, .opc-container {
         flex-wrap: nowrap;
         max-height: 70vh;
     }
+
+    form, .opc-container {
+        width: 70%; /**/
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    form, .opc-container {
+        width: 85%; /**/
+    }
+    
 }
