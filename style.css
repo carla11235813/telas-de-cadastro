@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: cornflowerblue;
+    overflow-x: hidden;
 }
 
 .container {
@@ -22,6 +23,28 @@ body {
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 
+}
+
+.voltar {
+    margin-bottom: 100px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title a, .voltar a {
+    background-color: #D9D9D9;
+    padding: 5px 8px;
+    border: 2px solid #08244C;
+    border-radius: 5px;
+}
+
+.title a i, .voltar a i {
+    color: #08244C;
 }
 
 .form-image {
@@ -51,10 +74,12 @@ body {
     margin-bottom: 1.5rem;
 }
 
+
+
 .form-header h1::after {
     content: '';
     display: block;
-    width: 5rem;
+    width: 10.8rem;
     height: 0.3rem;
     background-color: #08244C;
     margin: 0 auto;
@@ -105,7 +130,7 @@ body {
     color: #000000c0;
 }
 
-.continue-btn button {
+.continue-btn button, .continue-btn input {
     width: 100%;
     margin-top: 0.5rem;
     border: none;
@@ -149,7 +174,20 @@ form, .opc-container {
     width: 50%; /**/
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width:1100px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .form-header h1::after {
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
     .form-image {
         display: none;
 
@@ -182,5 +220,4 @@ form, .opc-container {
     form, .opc-container {
         width: 85%; /**/
     }
-    
 }
