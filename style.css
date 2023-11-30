@@ -170,6 +170,10 @@ body {
     outline: none;
 }
 
+.opc-container {
+    margin: auto;
+}
+
 form, .opc-container {
     width: 50%; /**/
 }
